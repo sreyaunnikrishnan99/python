@@ -1,0 +1,8 @@
+#list to tuple
+tuple=(1,2,3,4)
+l=list(tuple)
+print(l)
+l[1]='python'
+print(l)
+tuple1=tuple(l)
+print(tuple1)
