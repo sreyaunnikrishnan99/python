@@ -1,0 +1,27 @@
+a=int(input("enter first number")
+b=int(input ("enter second number")
+i=int(input("enter value"))
+int result=0
+for(int i=0,i<5,i++):
+      if (i==0):
+          result=a+b
+          print("sum of numbers is",result)
+       elif (i==1):
+          result=a - b
+          print("difference of numbers is",result)
+      elif (i==2):
+          result=a*b
+          print("product of numbers is",result)
+      elif (i==3):
+          result=a/b
+          print("dividing numbers gives",result)
+      elif (i==4):
+          result=a // b
+          print("completely divsisible by",result)
+      elif (i==5):
+          result=a%b
+          print("remainder of numbers is",result)
+      else:
+          
+          print("invalid value")
+      
