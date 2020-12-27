@@ -1,0 +1,31 @@
+import re 
+  
+# Function checks if the input string(test)
+# contains any special character or not
+def check_splcharacter(test): 
+  
+    # Make an RE character set and pass  
+    # this as an argument in compile function
+ 
+    string_check= re.compile('[@_!#$%^&*()<>?/\|}{~:]') 
+      
+    # Pass the string in search function  
+    # of RE object (string_check).
+     
+    if(string_check.search(test) == None): 
+        print("String does not contain Special Characters.")
+          
+    else: 
+        print("String contains Special Characters.") 
+      
+  
+# Driver Code 
+if __name__ == '__main__' : 
+      
+    # Enter the string to be checked
+ 
+    test = "CodeS#peedy"
+      
+    # calling check_splcharacter function
+  
+    check_splcharacter(test) 
