@@ -1,0 +1,22 @@
+import base64 
+reference_id = input ('Enter Reference ID: ')
+if(len(reference_id) != 12):
+    print("Reference ID should be 12 characters")
+allowed_chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "abcdefghijklmnopqrstuvwxyz" +  "0123456789"
+
+is_validated = True
+for c in reference_id:
+    if (c not in allowed_chars):
+        is_validated = False
+        break
+print("Is validated:", is_validated)
+if(not is_validated) :
+    print("Reference ID should contain only number and alphabets")
+
+
+
+# Encrypt the Reference ID:
+
+reference_id_encrypt = base64.b64encode(reference_id.encode())
+
+print(" Congratulations!!! ReferenceID is encrypted, You are Safe from Hackers:",reference_id_encrypt )
